@@ -11,14 +11,14 @@
     <h2>Here are your access records</h2>
 
     <div class="djangotwo">
-        {% if access_records %}
+        {% if access_record %}
         <table>
             <thead>
                 <th>Site name</th>
                 <th>Date accessed</th>
             </thead>
         
-        {% for acc in access_records %}
+        {% for acc in access_record %}
         <tr>
             <td>{{ acc.name }}</td>
             <td>{{ acc.date }}</td>
